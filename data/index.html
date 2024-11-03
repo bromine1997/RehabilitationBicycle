@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title>Elephant Web Server</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" type="text/css" href="style.css">
+ </head>
+ <body>
+  <div class="topnav">
+    <h3>ELEPHANT WEB MONITOR</h3>
+  </div>
+  <div class="content">
+    <div class="cards">
+      <div class="card leftarm">
+        <h4><i class="fas fa-weight"></i>  LEFT ARM<span class="reading"><br><span id="larm">%LEFTARM%</span> Kg</span></h4>
+      </div>
+      <div class="card rightarm">
+        <h4><i class="fas fa-weight"></i>  RIGHT ARM<span class="reading"><br><span id="rarm">%RIGHTARM%</span> Kg</span></h4>
+      </div>
+      <div class="card leftfoot">
+        <h4><i class="fas fa-weight"></i>  LEFT LEG<span class="reading"><br><span id="lfoot">%LEFTFOOT%</span> Kg</span></h4>
+      </div>
+      <div class="card rightfoot">
+        <h4><i class="fas fa-weight"></i>  RIGHT LEG<span class="reading"><br><span id="rfoot">%RIGHTFOOT%</span> Kg</span></h4>
+      </div>
+      <div class="card angle">
+        <h4><i class="fas fa-cog"></i>  ANGLE<span class="reading"><br><span id="angle">%ANGLE%</span> &deg;</span></h4>
+      </div>
+      <div class="card">
+        <h4><i class="fas fa-stopwatch"></i>  STOPWATCH<span class="reading">
+          <span id="stopwatch"><br>
+            <span class="reading" id="min">00</span>
+            <span class="reading">:</span>
+            <span class="reading" id="sec">00</span>
+          </span>
+        </span></h4>
+      </div>
+    </div>
+	<br><button id="start" onclick="StartSubmit()">Start of Data Acquisition</button><br><br>
+    <button id="stop" onclick="StopSubmit()">Stop of Data Acquisition</button><br><br>
+    <button onclick="SaveSubmit()">Save the Data</button><br>
+	<form>
+	  <input type="radio" id="TEXT" name="filetype" value="TEXT" checked>
+	  <label for="TEXT">Text</label>
+	  <input type="radio" id="BINARY" name="filetype" value="BINARY">
+	  <label for="BINARY">Binary</label>
+	</form>
+  </div>
+  <script src="script.js"></script>
+ </body>
+</html>

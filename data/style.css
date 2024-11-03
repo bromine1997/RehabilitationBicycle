@@ -1,0 +1,57 @@
+html {font-family: Arial; display: inline-block; text-align: center;}
+p {  font-size: 1.0rem;}
+body {  margin: 0;}
+.topnav { overflow: hidden; background-color: #4B1D3F; color: white; font-size: 1.5rem; }
+.content { padding: 6px; }
+.card { background-color: white; box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5); }
+.cards { max-width: 300px; margin: 0 auto; display: grid; grid-gap: 0.5rem; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); }
+.reading { font-size: 1.5rem; }
+.card.rightarm { color: #0e7c7b; }
+.card.leftarm { color: #17bebb; }
+.card.rightfoot { color: #3fca6b; }
+.card.leftfoot { color: #d62246; }
+.card.angle { color: #f62206; }
+
+form{
+  border: none;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+  padding: 10px 10px;
+  transition-duration: 0.4s;
+  text-align: center;
+}
+
+button {
+  background-color: #034078;
+  border: none;
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+  width: 300px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1282A2;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  margin-right: 5px;
+  position: relative;
+  top: 4px;
+}
+
+input[type="radio"]:checked{
+  border: 6px solid #1282A2;
+}
