@@ -1,6 +1,6 @@
 # RehabilitationBicycle
 
-ESP32 Feather V2
+ESP32 Feather V2/ Arduino IDE
 
 SPIFFS
 
